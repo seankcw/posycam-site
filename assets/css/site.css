@@ -204,6 +204,7 @@ ul, ol { padding: 0; list-style: none; }
 .promises__title { grid-column: 1 / 7; align-self: start; position: sticky; top: 0; height: 100svh; display: flex; align-items: center; }
 .promises__title h2 { font-size: var(--s-1); line-height: 0.85; color: var(--ink); }
 .promises__list { grid-column: 8 / 13; display: grid; gap: 22svh; padding: 18svh 0; }
+.promise { width: 82%; }
 .promise:nth-child(even) { margin-left: 18%; }
 .promise img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .promise h3 { font: 700 var(--s-3)/1.2 var(--display); letter-spacing: -0.015em; margin-top: 20px; }

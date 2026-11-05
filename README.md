@@ -44,7 +44,6 @@ Then open <http://localhost:8000>. You can also open `index.html` straight from 
 
 ## Before launch
 
-- Replace the highlighted `[developer or company legal name]` in `privacy/index.html`.
 - Make sure `support@posycam.io` receives mail (most registrars offer free forwarding).
 - Keep the privacy policy in step with the app, the App Store privacy label and the Play Data safety form. The policy describes the app as of 5 November 2026; Beauty (face retouching) is not covered because it is turned off in every build.
 - Swap the "Email me at launch" buttons for App Store links when the app is live.
