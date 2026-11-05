@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PosyCam · Camera coaching before the shutter</title>
+  <meta name="description" content="PosyCam is a camera app that coaches your framing and pose one instruction at a time. It works offline, needs no account and never uploads your photos.">
+  <link rel="canonical" href="https://posycam.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://posycam.io/">
+  <meta property="og:title" content="PosyCam · Fix it before the shot">
+  <meta property="og:description" content="A camera app that coaches your framing and pose one instruction at a time. Offline, no account, no uploads.">
+  <meta property="og:image" content="https://posycam.io/assets/img/cinematic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#101513">
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <main id="main">
+    <!-- Hero: the coach card over a dim room -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__photo" src="assets/img/cinematic.jpg" width="1480" height="813" alt="A man leans against a lamplit stone colonnade at dusk, with a lake and mountains behind him.">
+      <div class="hero__card" data-reveal>
+        <h1 id="hero-title" class="hero__title display" style="--i:0">Fix it before<br> the shot</h1>
+        <p class="hero__facts" style="--i:1">
+          <span>A camera app for iPhone</span>
+          <span>Works offline. No account.</span>
+          <span>Coming soon to the App Store</span>
+        </p>
+        <p class="hero__lede" style="--i:2">It reads the scene and gives you one instruction at a time, like “lower the camera slightly”, so the photo is right when you press the shutter.</p>
+        <div class="hero__foot" style="--i:3">
+          <a class="wordmark" href="index.html" aria-label="PosyCam home"><img src="assets/img/icon.svg" width="32" height="32" alt="">PosyCam</a>
+          <a class="btn" href="mailto:support@posycam.io?subject=Tell%20me%20when%20PosyCam%20launches&amp;body=Please%20email%20me%20when%20PosyCam%20is%20on%20the%20App%20Store.">Email me at launch</a>
+          <a class="link" href="#coach">See how it coaches</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase: one viewfinder, three independent choices -->
+    <section class="showcase" id="coach" aria-labelledby="coach-title">
+      <div class="showcase__markers" aria-hidden="true"><span data-stage="technique"></span><span data-stage="style"></span><span data-stage="frame"></span></div>
+      <div class="stage">
+        <h2 id="coach-title" class="stage__title">
+          <span class="stage__half stage__half--top display">Change one thing.</span>
+          <span class="stage__half stage__half--bottom display">Keep the rest.</span>
+        </h2>
+
+        <div class="viewfinder" data-ui data-style="original" id="viewfinder">
+          <img id="vf-photo" src="assets/img/fashion.jpg" width="1122" height="1402" alt="Sample scene for Long-Leg Fashion: a woman in wide trousers in front of a stone building.">
+        </div>
+
+        <div class="stage__left">
+          <p class="coach" data-ui aria-live="polite" id="coach-line"><b>Distance</b>Keep both shoes in frame</p>
+          <p class="stage__note">Technique, style and frame are separate choices in the camera. Change one and the other two stay where you left them.</p>
+        </div>
+
+        <div class="stage__right">
+          <div class="controls" data-ui role="group" aria-label="Try the camera's three choices">
+            <div class="controls__group is-live" data-axis="technique">
+              <p class="controls__label" id="lbl-technique">Technique</p>
+              <div class="chips" role="group" aria-labelledby="lbl-technique">
+                <button class="chip" type="button" aria-pressed="true" data-value="fashion">Long-Leg Fashion</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="portrait">Natural Portrait</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="street">Street Candid</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="group">Group Portrait</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="architecture">Architecture</button>
+              </div>
+            </div>
+            <div class="controls__group" data-axis="style">
+              <p class="controls__label" id="lbl-style">Style</p>
+              <div class="chips" role="group" aria-labelledby="lbl-style">
+                <button class="chip" type="button" aria-pressed="true" data-value="original">Original</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="film">Film</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="mono">Monochrome</button>
+              </div>
+            </div>
+            <div class="controls__group" data-axis="frame">
+              <p class="controls__label" id="lbl-frame">Frame</p>
+              <div class="chips" role="group" aria-labelledby="lbl-frame">
+                <button class="chip" type="button" aria-pressed="false" data-value="0.75">3:4</button>
+                <button class="chip" type="button" aria-pressed="true" data-value="0.8">4:5</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="1">1:1</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="0.5625">9:16</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="1.7778">16:9</button>
+              </div>
+            </div>
+            <p class="stage__note">Looks are approximated here in your browser. In the app they render on the camera preview and in the saved photo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The techniques, at one type size -->
+    <section class="lineup" id="techniques" aria-labelledby="techniques-title">
+      <h2 id="techniques-title" class="lineup__intro" data-reveal><span>Thirteen techniques, four groups</span></h2>
+      <table>
+        <caption class="vh">PosyCam techniques, what each coaches, its suggested frame and whether it is free</caption>
+        <thead class="vh">
+          <tr><th scope="col">Technique</th><th scope="col">What it coaches</th><th scope="col">Frame</th><th scope="col">Access</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="rowgroup" colspan="4">People</th></tr>
+          <tr class="row" style="--i:0"><td class="t-name">Natural Portrait</td><td class="t-what">Comfortable perspective, balanced framing</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
+          <tr class="row" style="--i:1"><td class="t-name">Long-Leg Fashion</td><td class="t-what">Lower viewpoint; head and shoes kept in frame</td><td class="t-frame">4:5</td><td class="t-tier pro">Pro</td></tr>
+          <tr class="row" style="--i:2"><td class="t-name">Cinematic Portrait</td><td class="t-what">Negative space and leading lines</td><td class="t-frame">16:9</td><td class="t-tier pro">Pro</td></tr>
+          <tr class="row" style="--i:3"><td class="t-name">Streamlined Silhouette</td><td class="t-what">Pose and background separation, no reshaping</td><td class="t-frame">3:4</td><td class="t-tier pro">Pro</td></tr>
+          <tr class="row" style="--i:4"><td class="t-name">Street Candid</td><td class="t-what">Room for movement</td><td class="t-frame">9:16</td><td class="t-tier pro">Pro</td></tr>
+          <tr class="row" style="--i:5"><td class="t-name">Group Portrait</td><td class="t-what">Room for everyone, every face clear</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
+          <tr class="row" style="--i:6"><td class="t-name">Pet Portrait</td><td class="t-what">Their eye level and a simple background</td><td class="t-frame">4:5</td><td class="t-tier">Free</td></tr>
+        </tbody>
+        <tbody>
+          <tr><th scope="rowgroup" colspan="4">Places</th></tr>
+          <tr class="row" style="--i:0"><td class="t-name">Landscape</td><td class="t-what">Horizon, balance and depth with no one in the photo</td><td class="t-frame">16:9</td><td class="t-tier">Free</td></tr>
+          <tr class="row" style="--i:1"><td class="t-name">Architecture</td><td class="t-what">Upright lines and a clean edge</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
+        </tbody>
+        <tbody>
+          <tr><th scope="rowgroup" colspan="4">Food &amp; things</th></tr>
+          <tr class="row" style="--i:0"><td class="t-name">Food</td><td class="t-what">A diner's view and soft window light</td><td class="t-frame">4:5</td><td class="t-tier">Free</td></tr>
+          <tr class="row" style="--i:1"><td class="t-name">Flat-lay</td><td class="t-what">Straight down, items squared to the frame</td><td class="t-frame">1:1</td><td class="t-tier">Free</td></tr>
+          <tr class="row" style="--i:2"><td class="t-name">Minimalist Editorial</td><td class="t-what">Simple shapes and a quieter background</td><td class="t-frame">4:5</td><td class="t-tier pro">Pro</td></tr>
+        </tbody>
+        <tbody>
+          <tr><th scope="rowgroup" colspan="4">Night</th></tr>
+          <tr class="row" style="--i:0"><td class="t-name">Low Light</td><td class="t-what">Light on the subject and a steady phone</td><td class="t-frame">9:16</td><td class="t-tier">Free</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- How it works: one verb at a time -->
+    <section class="verbs" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="vh">How PosyCam works</h2>
+      <div class="verb-panel">
+        <img src="assets/img/flatlay.jpg" width="1254" height="1254" alt="Sample scene: a breakfast table photographed from directly above." loading="lazy">
+        <p class="verb-panel__word display" aria-hidden="true">Pick</p>
+        <p class="verb-panel__text" data-reveal><span><b>Pick.</b> Start from what you're shooting: people, places, food and things, or night. PosyCam suggests a frame and a look, and Undo puts yours back.</span></p>
+      </div>
+      <div class="verb-panel">
+        <img src="assets/img/landscape.jpg" width="1400" height="933" alt="A wooden boathouse on a still mountain lake." loading="lazy">
+        <p class="verb-panel__word display" aria-hidden="true">Follow</p>
+        <p class="verb-panel__text" data-reveal><span><b>Follow.</b> One instruction at a time, below the photo and never over your subject. Zoom, focus and exposure stay in your hands, and hints turn off whenever you like.</span></p>
+        <p class="verb-panel__credit">Photo: <a href="https://unsplash.com/photos/zAjdgNXsMeg">Luca Bravo</a>, Unsplash</p>
+      </div>
+      <div class="verb-panel">
+        <img src="assets/img/cafe.jpg" width="1024" height="1536" alt="Sample scene: a café table by a rainy window." loading="lazy">
+        <p class="verb-panel__word display" aria-hidden="true">Keep</p>
+        <p class="verb-panel__text" data-reveal><span><b>Keep.</b> The shutter saves and the camera stays open. Crop, relight and restyle later; the original is never overwritten.</span></p>
+      </div>
+    </section>
+
+    <!-- Privacy promises: pinned title, portraits pass -->
+    <section class="promises" id="privacy-promises" aria-labelledby="promises-title">
+      <div class="promises__title"><h2 id="promises-title" class="display">Stays yours</h2></div>
+      <ul class="promises__list">
+        <li class="promise" data-reveal="mask">
+          <img src="assets/img/portrait.jpg" width="1086" height="1448" alt="Sample scene: a smiling woman in a cream sweater." loading="lazy">
+          <h3>No account</h3>
+          <p class="role">Open it and shoot</p>
+          <p class="what">No sign-up, no profile, no login screen. PosyCam works the moment it opens.</p>
+        </li>
+        <li class="promise" data-reveal="mask">
+          <img src="assets/img/silhouette.jpg" width="1086" height="1448" alt="Sample scene: a woman posed against a plain wall, outline clear of the background." loading="lazy">
+          <h3>On your phone</h3>
+          <p class="role">Scene analysis runs on the device</p>
+          <p class="what">Pose and scene detection run on your phone. PosyCam never uploads your photos or camera frames.</p>
+        </li>
+        <li class="promise" data-reveal="mask">
+          <img src="assets/img/pet.jpg" width="1122" height="1402" alt="Sample scene: a dog photographed at its own eye level." loading="lazy">
+          <h3>Offline</h3>
+          <p class="role">Airplane mode included</p>
+          <p class="what">Capture, coaching, editing, the gallery and export all work without a connection.</p>
+        </li>
+        <li class="promise" data-reveal="mask">
+          <img src="assets/img/group.jpg" width="1086" height="1448" alt="Sample scene: four friends together, every face visible." loading="lazy">
+          <h3>No reshaping</h3>
+          <p class="role">Coaching moves the camera</p>
+          <p class="what">Long-Leg Fashion changes your camera height and distance. It never stretches or slims anyone.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pricing: the ticket -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing__head" data-reveal>
+        <h2 id="pricing-title" class="display" style="--i:0">Free to shoot.<br> Pro, once.</h2>
+        <p style="--i:1">The free app includes eight techniques, the Original and Harbor looks, all five frames, manual controls, the editor, the gallery and full-resolution export without a watermark. Pro unlocks the rest.</p>
+      </div>
+      <div class="ticket" data-reveal>
+        <div class="ticket__main" style="--i:0">
+          <h3 class="display">PosyCam Pro</h3>
+          <ul>
+            <li>Five more techniques</li>
+            <li>Every film and monochrome look</li>
+            <li>Watercolor-like and anime-inspired styles</li>
+            <li>No subscription and no ads</li>
+          </ul>
+        </div>
+        <div class="ticket__stub" style="--i:1">
+          <p class="ticket__price display">$24.99</p>
+          <p class="ticket__once">one purchase, restored on your other iPhones</p>
+          <a class="btn" href="mailto:support@posycam.io?subject=Tell%20me%20when%20PosyCam%20launches&amp;body=Please%20email%20me%20when%20PosyCam%20is%20on%20the%20App%20Store.">Email me at launch</a>
+        </div>
+        <span class="ticket__notch ticket__notch--top" aria-hidden="true"></span>
+        <span class="ticket__notch ticket__notch--bottom" aria-hidden="true"></span>
+        <span class="ticket__perf" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="faq" id="questions" aria-labelledby="faq-title">
+      <div class="faq__list">
+        <h2 id="faq-title" class="faq__heading">Common questions</h2>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="true" aria-controls="a1" id="q1">Does PosyCam work without internet?</button>
+          <div class="faq__a" id="a1" role="region" aria-labelledby="q1"><p>Yes. Capture, coaching, editing, the gallery and export all work offline. A connection is only used to check a Pro purchase, and for crash reports or announcements if you turn those on.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a2" id="q2">Are my photos uploaded anywhere?</button>
+          <div class="faq__a" id="a2" role="region" aria-labelledby="q2"><p>No. Photos and camera frames stay on your phone. They leave only when you save them to your photo library or share them yourself.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a3" id="q3">Does Long-Leg Fashion stretch legs?</button>
+          <div class="faq__a" id="a3" role="region" aria-labelledby="q3"><p>No. It coaches a lower camera, the right distance and room for the shoes. The photo itself is never warped.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a4" id="q4">Are the art styles AI-generated?</button>
+          <div class="faq__a" id="a4" role="region" aria-labelledby="q4"><p>No. Film, monochrome, watercolor-like and anime-inspired looks are filters applied to your own photo. Nothing is generated or redrawn.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a5" id="q5">Where are my photos saved?</button>
+          <div class="faq__a" id="a5" role="region" aria-labelledby="q5"><p>In PosyCam's own gallery, with every edit kept reversible, and in your photo library unless you turn that off. Deleting a photo in PosyCam leaves the library copy alone.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a6" id="q6">Can I turn the coaching off?</button>
+          <div class="faq__a" id="a6" role="region" aria-labelledby="q6"><p>Yes. Hints, photo marks, how often hints appear and automatic adjustments each have their own switch, and Manual mode shows no hints at all.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" type="button" aria-expanded="false" aria-controls="a7" id="q7">Which phones and languages?</button>
+          <div class="faq__a" id="a7" role="region" aria-labelledby="q7"><p>iPhone with iOS 18.2 or later at launch; Android is in development. The app speaks English, Traditional and Simplified Chinese, Japanese, Korean, Spanish, Brazilian Portuguese and Indonesian.</p></div>
+        </div>
+      </div>
+      <div class="faq__pane" id="faq-pane" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="foot" data-reveal>
+    <p class="foot__name display" style="--i:0">PosyCam</p>
+    <div class="foot__row" style="--i:1">
+      <ul class="foot__places">
+        <li><a href="mailto:support@posycam.io">support@posycam.io</a></li>
+        <li><a href="privacy/index.html">Privacy policy</a></li>
+        <li><a href="support/index.html">Support</a></li>
+      </ul>
+      <div class="foot__cols">
+        <div>
+          <h3>The app</h3>
+          <ul>
+            <li><a href="#coach">How it coaches</a></li>
+            <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#questions">Questions</a></li>
+            <li><a href="support/index.html">Support</a></li>
+            <li><a href="support/index.html#restore">Restore Pro</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy/index.html">Privacy</a></li>
+            <li><a href="privacy/index.html#third-parties">Third parties</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot__legal" style="--i:2">
+      <p>© 2026 PosyCam. People and scenes on this page are generated sample images, not photos taken with PosyCam. Landscape by <a href="https://unsplash.com/photos/zAjdgNXsMeg">Luca Bravo</a> and architecture by <a href="https://unsplash.com/photos/six-windows-on-a-modern-building-facade-AtWhDcBQlaU">Saba</a> on Unsplash.</p>
+      <a class="link" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

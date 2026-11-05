@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · PosyCam</title>
+  <meta name="description" content="How PosyCam handles your data: photos stay on your phone, no account, no ads or analytics, and optional services are off by default.">
+  <link rel="canonical" href="https://posycam.io/privacy/">
+  <meta name="theme-color" content="#101513">
+  <link rel="icon" href="../assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="wordmark" href="../index.html"><img src="../assets/img/icon.svg" width="32" height="32" alt="">PosyCam</a>
+    <nav aria-label="Site">
+      <a href="../index.html">Home</a>
+      <a href="../privacy/index.html" aria-current="page">Privacy</a>
+      <a href="../support/index.html">Support</a>
+    </nav>
+  </header>
+
+  <main id="main" class="doc">
+    <div class="doc__head">
+      <h1 class="display">Privacy policy</h1>
+      <p>Last updated 5 November 2026. This policy covers the PosyCam app for iPhone and Android and this website.</p>
+    </div>
+
+    <aside class="doc__summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">The short version</h2>
+      <ul>
+        <li>There is no account and no sign-in.</li>
+        <li>Your photos and camera frames stay on your phone. PosyCam never uploads them.</li>
+        <li>Pose and scene detection run on the device, live, and are not stored.</li>
+        <li>There are no ads, no analytics and no tracking across apps.</li>
+        <li>Crash reports and announcements are off until you turn them on.</li>
+        <li>On iPhone, the app checks your Pro purchase with RevenueCat.</li>
+        <li>On Android, Google's on-device detection library sends usage statistics (never images) once you allow it.</li>
+      </ul>
+    </aside>
+
+    <div class="doc__body">
+      <h2 id="who">Who we are</h2>
+      <p>PosyCam is made by <mark>[developer or company legal name]</mark> (“we”). If you have a question about this policy or your data, email <a href="mailto:support@posycam.io">support@posycam.io</a>.</p>
+
+      <h2 id="photos">Your photos stay on your phone</h2>
+      <p>Everything you capture is stored inside the app on your phone: the original photo, the edited version, your edit settings and thumbnails. By default PosyCam also saves a copy to your photo library. A photo leaves the app only when you save it to your photo library or share it yourself.</p>
+      <p>We do not run servers that receive your photos, and the app does not upload photos, camera frames or edits anywhere.</p>
+      <ul>
+        <li><strong>Location.</strong> PosyCam does not ask for your location. Photos it exports contain only orientation and colour information, not GPS coordinates.</li>
+        <li><strong>Backups.</strong> On iPhone, the app's photos and settings are included in your device backups (iCloud or computer), following your own backup settings. On Android, PosyCam's data is excluded from Android backup.</li>
+        <li><strong>Deleting.</strong> Deleting a photo in PosyCam removes it and its edits from the app. Copies already in your photo library stay until you delete them there. Uninstalling the app removes everything it stored.</li>
+      </ul>
+
+      <h2 id="detection">Pose and scene detection</h2>
+      <p>To coach you, PosyCam looks at the live camera image on your phone to find people, faces, body pose and the shape of the scene. This happens on the device with models bundled in the app. The results are used live and then discarded: they are not saved with your photos and are not sent to us or anyone else. PosyCam does not identify who anyone is.</p>
+
+      <h2 id="permissions">Permissions</h2>
+      <table>
+        <thead><tr><th scope="col">Permission</th><th scope="col">Why</th></tr></thead>
+        <tbody>
+          <tr><td>Camera</td><td>To show the preview and take photos.</td></tr>
+          <tr><td>Photos, add only (iPhone)</td><td>To save your photos to your library. PosyCam cannot read your existing library.</td></tr>
+          <tr><td>Motion (iPhone)</td><td>For the level that keeps horizons straight.</td></tr>
+          <tr><td>Notifications</td><td>Only if you turn on Announcements.</td></tr>
+          <tr><td>Internet</td><td>For the purchase check and the optional services below. Capture, coaching, editing and export work offline.</td></tr>
+        </tbody>
+      </table>
+      <p>PosyCam does not request the microphone, your location, your contacts or permission to track you across other apps.</p>
+
+      <h2 id="third-parties">Services that receive data</h2>
+      <p>PosyCam has no account and no analytics or advertising tools. These are the only services that receive data from the app, and none of them receive your photos.</p>
+
+      <h3>Apple App Store and RevenueCat (iPhone purchases)</h3>
+      <p>PosyCam Pro is a one-time purchase through the App Store. Apple handles payment; we never see your payment details. To confirm and restore Pro, the iPhone app contacts <a href="https://www.revenuecat.com/privacy/">RevenueCat</a> when it opens and when it returns to the screen. This happens for every iPhone user, including those who have not bought Pro. RevenueCat receives a random identifier it creates for the app (not your name or Apple ID), your App Store purchase information, and basic technical details such as app version, device model, operating system and the IP address of the connection.</p>
+
+      <h3>Firebase Crashlytics (crash reports, off by default)</h3>
+      <p>If you turn on <em>Share crash reports</em> in Settings → Saving &amp; privacy, a report is sent to Google's <a href="https://firebase.google.com/support/privacy">Firebase Crashlytics</a> when the app crashes. A report contains technical details of the crash (such as where in the code it happened), the app version, device model, operating system version, device state such as temperature level, and an installation identifier. It never contains a photo. Turning the switch off stops reporting and deletes reports not yet sent. Google states that it keeps Crashlytics crash data for 90 days.</p>
+
+      <h3>Firebase Cloud Messaging (announcements, off by default)</h3>
+      <p>If you turn on <em>Announcements</em>, the app registers with Google's Firebase Cloud Messaging so we can send occasional news about PosyCam. This uses a push token and a Firebase installation identifier (on iPhone, Apple's push service is also involved). Everyone who opts in receives the same messages; we do not build a profile of you. Turning the switch off unsubscribes you and deletes the token.</p>
+
+      <h3>Google MediaPipe usage statistics (Android only)</h3>
+      <p>On Android, PosyCam uses Google's MediaPipe library for on-device detection. Before it starts, the app asks your permission, because the library sends usage statistics to Google: the app's identifier and version, which detectors were started and how long they took to start, device maker and model, operating system build, language and country settings, mobile network code and network type. It never sends images, camera frames or detection results. If you decline, the detectors do not start; the camera, editing, export and coaching that does not need them keep working. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>. The iPhone app does not send these statistics.</p>
+
+      <h2 id="not">What we don't do</h2>
+      <ul>
+        <li>We don't sell or rent personal data, and we don't share it for advertising.</li>
+        <li>We don't use analytics, advertising identifiers or cross-app tracking.</li>
+        <li>We don't use your photos to train AI models. We never receive them.</li>
+      </ul>
+
+      <h2 id="retention">How long data is kept</h2>
+      <p>Data on your phone stays until you delete it or uninstall the app. Data held by RevenueCat and Google is kept according to their own policies, linked above. We use their dashboards only to confirm purchases, fix crashes and send announcements.</p>
+
+      <h2 id="rights">Your choices and rights</h2>
+      <ul>
+        <li>Turn crash reports and announcements on or off at any time in Settings → Saving &amp; privacy.</li>
+        <li>Delete photos in the app, or uninstall it to remove everything it stored.</li>
+        <li>Depending on where you live, you may have rights to access, correct or delete personal data, or to object to its use. Because PosyCam has no accounts, we hold almost nothing that identifies you. Email <a href="mailto:support@posycam.io">support@posycam.io</a> and we'll help, including with requests to RevenueCat or Google where we can.</li>
+      </ul>
+      <p>RevenueCat and Google may process data in the United States and other countries.</p>
+
+      <h2 id="children">Children</h2>
+      <p>PosyCam is not directed at children under 13, and we do not knowingly collect personal information from them. If you think a child has sent us personal information, email us and we will delete it.</p>
+
+      <h2 id="website">This website</h2>
+      <p>posycam.io is hosted on GitHub Pages. GitHub may log visitors' IP addresses for security, as described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. The site uses no cookies and no analytics. It loads its typeface from Google Fonts, which receives your IP address when the font is requested.</p>
+
+      <h2 id="changes">Changes to this policy</h2>
+      <p>If we change how PosyCam handles data, we will update this page and the date at the top before the change takes effect in the app.</p>
+    </div>
+  </main>
+
+  <footer class="doc__foot">
+    <span>© 2026 PosyCam</span>
+    <span><a href="../index.html">Home</a> · <a href="../support/index.html">Support</a> · <a href="mailto:support@posycam.io">support@posycam.io</a></span>
+  </footer>
+</body>
+</html>
