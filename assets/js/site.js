@@ -1,8 +1,8 @@
 (() => {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Section entrances: each [data-reveal] block and each technique group, once.
-  const revealTargets = document.querySelectorAll('[data-reveal], .lineup tbody');
+  // Section entrances: each [data-reveal] block, once.
+  const revealTargets = document.querySelectorAll('[data-reveal]');
   if ('IntersectionObserver' in window && !reduce) {
     const io = new IntersectionObserver((entries) => {
       for (const e of entries) {
@@ -72,8 +72,8 @@
     // until the visitor takes over with a tap.
     const stages = {
       technique: () => { apply('style', 'original'); apply('frame', '0.8'); apply('technique', 'fashion'); },
-      style: () => { apply('technique', 'fashion'); apply('frame', '0.8'); apply('style', 'mono'); },
-      frame: () => { apply('technique', 'fashion'); apply('style', 'mono'); apply('frame', '0.5625'); },
+      style: () => { apply('technique', 'fashion'); apply('frame', '0.8'); apply('style', 'street'); },
+      frame: () => { apply('technique', 'fashion'); apply('style', 'street'); apply('frame', '0.5625'); },
     };
     const wide = window.matchMedia('(min-width: 960px)');
     if ('IntersectionObserver' in window) {

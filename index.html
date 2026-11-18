@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://posycam.io/assets/img/cinematic.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#101513">
-  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/apple-touch-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,12 +33,12 @@
         <p class="hero__facts" style="--i:1">
           <span>A camera app for iPhone</span>
           <span>Works offline. No account.</span>
-          <span>Coming soon to the App Store</span>
+          <span>Free to download</span>
         </p>
         <p class="hero__lede" style="--i:2">It reads the scene and gives you one instruction at a time, like “lower the camera slightly”, so the photo is right when you press the shutter.</p>
         <div class="hero__foot" style="--i:3">
-          <a class="wordmark" href="index.html" aria-label="PosyCam home"><img src="assets/img/icon.svg" width="32" height="32" alt="">PosyCam</a>
-          <a class="btn" href="mailto:support@posycam.io?subject=Tell%20me%20when%20PosyCam%20launches&amp;body=Please%20email%20me%20when%20PosyCam%20is%20on%20the%20App%20Store.">Email me at launch</a>
+          <a class="wordmark" href="index.html" aria-label="PosyCam home"><img src="assets/img/apple-touch-icon.png" width="32" height="32" alt="">PosyCam</a>
+          <a class="btn" href="https://apps.apple.com/app/posycam/id6829415207">Download on the App Store</a>
           <a class="link" href="#coach">See how it coaches</a>
         </div>
       </div>
@@ -78,8 +78,8 @@
               <p class="controls__label" id="lbl-style">Style</p>
               <div class="chips" role="group" aria-labelledby="lbl-style">
                 <button class="chip" type="button" aria-pressed="true" data-value="original">Original</button>
-                <button class="chip" type="button" aria-pressed="false" data-value="film">Film</button>
-                <button class="chip" type="button" aria-pressed="false" data-value="mono">Monochrome</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="harbor">Harbor</button>
+                <button class="chip" type="button" aria-pressed="false" data-value="street">Street</button>
               </div>
             </div>
             <div class="controls__group" data-axis="frame">
@@ -92,46 +92,29 @@
                 <button class="chip" type="button" aria-pressed="false" data-value="1.7778">16:9</button>
               </div>
             </div>
-            <p class="stage__note">Looks are approximated here in your browser. In the app they render on the camera preview and in the saved photo.</p>
+            <p class="stage__note">Preview Original, Harbor (Film) and Street (B&amp;W) here. The browser approximates the app’s rendering. In the app, you can also add Fisheye, Glow or a delayed nine-frame Grid.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- The techniques, at one type size -->
     <section class="lineup" id="techniques" aria-labelledby="techniques-title">
-      <h2 id="techniques-title" class="lineup__intro" data-reveal><span>Thirteen techniques, four groups</span></h2>
-      <table>
-        <caption class="vh">PosyCam techniques, what each coaches, its suggested frame and whether it is free</caption>
-        <thead class="vh">
-          <tr><th scope="col">Technique</th><th scope="col">What it coaches</th><th scope="col">Frame</th><th scope="col">Access</th></tr>
-        </thead>
-        <tbody>
-          <tr><th scope="rowgroup" colspan="4">People</th></tr>
-          <tr class="row" style="--i:0"><td class="t-name">Natural Portrait</td><td class="t-what">Comfortable perspective, balanced framing</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
-          <tr class="row" style="--i:1"><td class="t-name">Long-Leg Fashion</td><td class="t-what">Lower viewpoint; head and shoes kept in frame</td><td class="t-frame">4:5</td><td class="t-tier pro">Pro</td></tr>
-          <tr class="row" style="--i:2"><td class="t-name">Cinematic Portrait</td><td class="t-what">Negative space and leading lines</td><td class="t-frame">16:9</td><td class="t-tier pro">Pro</td></tr>
-          <tr class="row" style="--i:3"><td class="t-name">Streamlined Silhouette</td><td class="t-what">Pose and background separation, no reshaping</td><td class="t-frame">3:4</td><td class="t-tier pro">Pro</td></tr>
-          <tr class="row" style="--i:4"><td class="t-name">Street Candid</td><td class="t-what">Room for movement</td><td class="t-frame">9:16</td><td class="t-tier pro">Pro</td></tr>
-          <tr class="row" style="--i:5"><td class="t-name">Group Portrait</td><td class="t-what">Room for everyone, every face clear</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
-          <tr class="row" style="--i:6"><td class="t-name">Pet Portrait</td><td class="t-what">Their eye level and a simple background</td><td class="t-frame">4:5</td><td class="t-tier">Free</td></tr>
-        </tbody>
-        <tbody>
-          <tr><th scope="rowgroup" colspan="4">Places</th></tr>
-          <tr class="row" style="--i:0"><td class="t-name">Landscape</td><td class="t-what">Horizon, balance and depth with no one in the photo</td><td class="t-frame">16:9</td><td class="t-tier">Free</td></tr>
-          <tr class="row" style="--i:1"><td class="t-name">Architecture</td><td class="t-what">Upright lines and a clean edge</td><td class="t-frame">3:4</td><td class="t-tier">Free</td></tr>
-        </tbody>
-        <tbody>
-          <tr><th scope="rowgroup" colspan="4">Food &amp; things</th></tr>
-          <tr class="row" style="--i:0"><td class="t-name">Food</td><td class="t-what">A diner's view and soft window light</td><td class="t-frame">4:5</td><td class="t-tier">Free</td></tr>
-          <tr class="row" style="--i:1"><td class="t-name">Flat-lay</td><td class="t-what">Straight down, items squared to the frame</td><td class="t-frame">1:1</td><td class="t-tier">Free</td></tr>
-          <tr class="row" style="--i:2"><td class="t-name">Minimalist Editorial</td><td class="t-what">Simple shapes and a quieter background</td><td class="t-frame">4:5</td><td class="t-tier pro">Pro</td></tr>
-        </tbody>
-        <tbody>
-          <tr><th scope="rowgroup" colspan="4">Night</th></tr>
-          <tr class="row" style="--i:0"><td class="t-name">Low Light</td><td class="t-what">Light on the subject and a steady phone</td><td class="t-frame">9:16</td><td class="t-tier">Free</td></tr>
-        </tbody>
-      </table>
+      <h2 id="techniques-title" class="lineup__intro">18 techniques, 4 groups</h2>
+      <dl>
+        <div><dt>People</dt><dd>7</dd></div>
+        <div><dt>Places</dt><dd>7</dd></div>
+        <div><dt>Food &amp; things</dt><dd>3</dd></div>
+        <div><dt>Night</dt><dd>1</dd></div>
+      </dl>
+    </section>
+
+    <section class="lineup" id="styles" aria-labelledby="styles-title">
+      <h2 id="styles-title" class="lineup__intro">37 styles, 5 groups</h2>
+      <details><summary>Film (8)</summary><p>Harbor, Studio, Dusk, Vivid, Sunlit, Everyday, Snapshot, Slide</p></details>
+      <details><summary>B&amp;W (3)</summary><p>Street, Fine, Push</p></details>
+      <details><summary>Cinema (20)</summary><p>Amélie Garden, Grand Budapest, Moonrise Summer, Darjeeling Ochre, Blade Runner Dusk, Matrix Green, Mad Max Heat, Dune Spice, Interstellar Dust, Inception Steel, Dark Knight Blue, Joker Grit, La La Twilight, Her Pastel, Chungking Night, In the Mood Ruby, Fallen Angels, Drive Neon, Godfather Amber, Oz Technicolor</p></details>
+      <details><summary>Creative (4)</summary><p>Cyberpunk Neon, Golden Hour, Faded Vintage, Cool Cinematic</p></details>
+      <details><summary>Art (2)</summary><p>Watercolor-like, Anime-inspired</p></details>
     </section>
 
     <!-- How it works: one verb at a time -->
@@ -140,7 +123,7 @@
       <div class="verb-panel">
         <img src="assets/img/flatlay.jpg" width="1254" height="1254" alt="Sample scene: a breakfast table photographed from directly above." loading="lazy">
         <p class="verb-panel__word display" aria-hidden="true">Pick</p>
-        <p class="verb-panel__text" data-reveal><span><b>Pick.</b> Start from what you're shooting: people, places, food and things, or night. PosyCam suggests a frame and a look, and Undo puts yours back.</span></p>
+        <p class="verb-panel__text" data-reveal><span><b>Pick.</b> Choose a shooting type, or use Find a shot to get framing ideas from a reference photo. Your iPhone analyzes it on device. You choose which settings to apply.</span></p>
       </div>
       <div class="verb-panel">
         <img src="assets/img/landscape.jpg" width="1400" height="933" alt="A wooden boathouse on a still mountain lake." loading="lazy">
@@ -151,7 +134,7 @@
       <div class="verb-panel">
         <img src="assets/img/cafe.jpg" width="1024" height="1536" alt="Sample scene: a café table by a rainy window." loading="lazy">
         <p class="verb-panel__word display" aria-hidden="true">Keep</p>
-        <p class="verb-panel__text" data-reveal><span><b>Keep.</b> The shutter saves and the camera stays open. Crop, relight and restyle later; the original is never overwritten.</span></p>
+        <p class="verb-panel__text" data-reveal><span><b>Keep.</b> Edit a capture or import a photo from Photos. Compare takes side by side, zoom in together and pick your favorite. Edits preserve the original.</span></p>
       </div>
     </section>
 
@@ -190,14 +173,14 @@
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="pricing__head" data-reveal>
         <h2 id="pricing-title" class="display" style="--i:0">Free to shoot.<br> Pro, once.</h2>
-        <p style="--i:1">The free app includes eight techniques, the Original and Harbor looks, all five frames, manual controls, the editor, the gallery and full-resolution export without a watermark. Pro unlocks the rest.</p>
+        <p style="--i:1">Shoot in five frame shapes, edit your photos and export without a watermark. The free app also lets you try Find a shot and Roll mode.</p>
       </div>
       <div class="ticket" data-reveal>
         <div class="ticket__main" style="--i:0">
           <h3 class="display">PosyCam Pro</h3>
           <ul>
-            <li>Five more techniques</li>
-            <li>Every film and monochrome look</li>
+            <li>Additional shooting techniques</li>
+            <li>All Film, B&amp;W, Cinema and Creative looks</li>
             <li>Watercolor-like and anime-inspired styles</li>
             <li>No subscription and no ads</li>
           </ul>
@@ -205,7 +188,7 @@
         <div class="ticket__stub" style="--i:1">
           <p class="ticket__price display">$24.99</p>
           <p class="ticket__once">one purchase, restored on your other iPhones</p>
-          <a class="btn" href="mailto:support@posycam.io?subject=Tell%20me%20when%20PosyCam%20launches&amp;body=Please%20email%20me%20when%20PosyCam%20is%20on%20the%20App%20Store.">Email me at launch</a>
+          <a class="btn" href="https://apps.apple.com/app/posycam/id6829415207">Download on the App Store</a>
         </div>
         <span class="ticket__notch ticket__notch--top" aria-hidden="true"></span>
         <span class="ticket__notch ticket__notch--bottom" aria-hidden="true"></span>
@@ -235,7 +218,7 @@
         </div>
         <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="a5" id="q5">Where are my photos saved?</button>
-          <div class="faq__a" id="a5" role="region" aria-labelledby="q5"><p>In PosyCam's own gallery, with every edit kept reversible, and in your photo library unless you turn that off. Deleting a photo in PosyCam leaves the library copy alone.</p></div>
+          <div class="faq__a" id="a5" role="region" aria-labelledby="q5"><p>Regular captures appear in the app gallery and, by default, in Photos. In Roll mode, your 24 or 36 frames stay hidden until you develop the contact sheet. Deleting a photo in PosyCam leaves the library copy alone.</p></div>
         </div>
         <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="a6" id="q6">Can I turn the coaching off?</button>
@@ -243,7 +226,7 @@
         </div>
         <div class="faq__item">
           <button class="faq__q" type="button" aria-expanded="false" aria-controls="a7" id="q7">Which phones and languages?</button>
-          <div class="faq__a" id="a7" role="region" aria-labelledby="q7"><p>iPhone with iOS 18.2 or later at launch; Android is in development. The app speaks English, Traditional and Simplified Chinese, Japanese, Korean, Spanish, Brazilian Portuguese and Indonesian.</p></div>
+          <div class="faq__a" id="a7" role="region" aria-labelledby="q7"><p>iPhone with iOS 18.2 or later. Android is in development. The app speaks English, Traditional and Simplified Chinese, Japanese, Korean, French, German, Spanish, Brazilian Portuguese and Indonesian.</p></div>
         </div>
       </div>
       <div class="faq__pane" id="faq-pane" aria-live="polite"></div>
@@ -254,7 +237,6 @@
     <p class="foot__name display" style="--i:0">PosyCam</p>
     <div class="foot__row" style="--i:1">
       <ul class="foot__places">
-        <li><a href="mailto:support@posycam.io">support@posycam.io</a></li>
         <li><a href="privacy/index.html">Privacy policy</a></li>
         <li><a href="support/index.html">Support</a></li>
       </ul>

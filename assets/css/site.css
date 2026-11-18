@@ -110,15 +110,21 @@ ul, ol { padding: 0; list-style: none; }
 }
 .stage__title { display: contents; }
 .stage__half { font-size: var(--s-2); text-align: center; }
+@property --r {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0.8;
+}
 .viewfinder {
   --r: 0.8;
+  transition: --r 320ms ease-in-out;
   width: min(66vw, calc(36svh * var(--r))); aspect-ratio: var(--r);
   background: var(--matte); overflow: hidden; position: relative;
 }
 .viewfinder img { width: 100%; height: 100%; object-fit: cover; transition: opacity 260ms ease, filter 400ms ease; }
 .viewfinder img.is-swapping { opacity: 0; }
-.viewfinder[data-style="film"] img { filter: sepia(0.22) saturate(1.2) contrast(1.06) brightness(1.03) hue-rotate(-8deg); }
-.viewfinder[data-style="mono"] img { filter: grayscale(1) contrast(1.18) brightness(1.02); }
+.viewfinder[data-style="harbor"] img { filter: sepia(0.22) saturate(1.2) contrast(1.06) brightness(1.03) hue-rotate(-8deg); }
+.viewfinder[data-style="street"] img { filter: grayscale(1) contrast(1.18) brightness(1.02); }
 
 .coach { background: var(--surface); padding: 14px 18px; width: min(100%, 420px); font: 600 16px/1.35 var(--text); }
 .coach b { color: var(--accent); font-weight: 700; margin-right: 8px; }
@@ -153,30 +159,16 @@ ul, ol { padding: 0; list-style: none; }
   .stage__half--bottom { color: var(--ink); }
 }
 
-/* ---------- Techniques: line-up at one size ---------- */
+/* ---------- Technique counts ---------- */
 .lineup { margin-top: var(--gap); padding: 0 var(--m); }
 .lineup__intro { font: 700 var(--s-3)/1.15 var(--display); letter-spacing: -0.015em; color: var(--muted); max-width: 30ch; }
-.lineup table { width: 100%; border-collapse: collapse; font: 500 var(--s-3)/1.5 var(--display); letter-spacing: -0.01em; }
-.lineup th, .lineup td { padding: 0; text-align: left; vertical-align: baseline; font-weight: 500; }
-.lineup tbody th[scope="rowgroup"] {
-  color: var(--accent); padding: 72px 0 20px;
-  position: sticky; top: 0; background: var(--bg); z-index: 1;
-}
-.lineup td.t-name { width: 28%; }
-.lineup td.t-what { width: 54%; color: var(--muted); padding-right: 24px; }
-.lineup td.t-frame { width: 8%; font-variant-numeric: tabular-nums; }
-.lineup td.t-tier { text-align: right; }
-.lineup td.t-tier.pro { color: var(--accent); }
-.lineup tr.row td { padding-block: 0.12em; }
-
+.lineup details { padding-block: 0.75rem; border-bottom: 1px solid currentColor; }
+.lineup summary { cursor: pointer; }
+.lineup details p { max-width: 68ch; margin-top: 0.5rem; }
+.lineup dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0 0; }
+.lineup dd { margin: 0; font: 700 var(--s-2)/1.1 var(--display); color: var(--accent); }
 @media (max-width: 760px) {
-  .lineup table, .lineup tbody, .lineup tr, .lineup td, .lineup th { display: block; width: auto !important; }
-  .lineup thead { display: none; }
-  .lineup tbody th[scope="rowgroup"] { padding: 48px 0 12px; }
-  .lineup tr.row { display: grid; grid-template-columns: 1fr auto auto; column-gap: 12px; margin-bottom: 18px; }
-  .lineup td.t-name { grid-column: 1 / -1; font-size: var(--s-3); }
-  .lineup td.t-what { grid-column: 1; font: 400 var(--s-5)/1.4 var(--text); padding-right: 0; }
-  .lineup td.t-frame, .lineup td.t-tier { font: 600 var(--s-5)/1.4 var(--text); }
+  .lineup dl { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ---------- How it works: one verb at a time ---------- */
@@ -365,14 +357,12 @@ html.js [data-reveal] > :not([aria-hidden="true"]) {
 html.js [data-reveal].in > :not([aria-hidden="true"]) { opacity: 1; transform: none; }
 html.js [data-reveal="mask"] > img { opacity: 1; transform: none; clip-path: inset(0 0 100% 0); transition: clip-path 900ms var(--ease-out); }
 html.js [data-reveal="mask"].in > img { clip-path: inset(0 0 0 0); }
-html.js .lineup tr.row { opacity: 0; transform: translateY(16px); transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out); transition-delay: calc(var(--i, 0) * 50ms); }
-html.js .lineup tbody.in tr.row { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero__photo { animation: none; }
-  html.js [data-reveal] > :not([aria-hidden="true"]), html.js .lineup tr.row { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html.js [data-reveal] > :not([aria-hidden="true"]) { opacity: 1 !important; transform: none !important; transition: none !important; }
   html.js [data-reveal="mask"] > img { clip-path: none !important; }
-  .viewfinder img, .faq__pane { transition: none !important; }
+  .viewfinder, .viewfinder img, .faq__pane { transition: none !important; }
   .btn, .chip, .faq__q::before { transition: none; }
 }
